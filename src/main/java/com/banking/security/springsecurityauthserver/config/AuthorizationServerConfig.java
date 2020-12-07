@@ -27,7 +27,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 
     @Override
 	public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
-		clients.inMemory().withClient("ClientId").secret("secret").authorizedGrantTypes("authorization_code")
+		clients.inMemory().withClient("ClientId").secret("secret").authorizedGrantTypes("password")
 				.scopes("user_info")
 				.redirectUris("https://layla.amazon.com/api/skill/link/M263VAHX6BHCAC",
 						"https://alexa.amazon.co.jp/api/skill/link/M263VAHX6BHCAC",
