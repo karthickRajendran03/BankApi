@@ -1,11 +1,15 @@
 com\banking\security\springsecurityauthserver\model\Role.class
+com\banking\security\springsecurityauthserver\model\RoutingNumberValidation.class
 com\banking\security\springsecurityauthserver\model\AccountDetails.class
 com\banking\security\springsecurityauthserver\repository\AccountRepository.class
 com\banking\security\springsecurityauthserver\repository\UsersRepository.class
+com\banking\security\springsecurityauthserver\model\AccountValidation.class
 com\banking\security\springsecurityauthserver\service\CustomUserDetailsService.class
 com\banking\security\springsecurityauthserver\service\AccountService.class
 com\banking\security\springsecurityauthserver\model\CustomUserDetails.class
+com\banking\security\springsecurityauthserver\repository\AccountValidationRepository.class
 com\banking\security\springsecurityauthserver\config\AuthorizationServerConfig.class
+com\banking\security\springsecurityauthserver\repository\RoutingNumberValidationRepository.class
 com\banking\security\springsecurityauthserver\model\Users.class
 com\banking\security\springsecurityauthserver\HelloResource.class
 com\banking\security\springsecurityauthserver\service\AccountServiceImpl.class

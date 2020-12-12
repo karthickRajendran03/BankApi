@@ -6,9 +6,13 @@ C:\Workspace\BankApi\src\main\java\com\banking\security\springsecurityauthserver
 C:\Workspace\BankApi\src\main\java\com\banking\security\springsecurityauthserver\repository\UsersRepository.java
 C:\Workspace\BankApi\src\main\java\com\banking\security\springsecurityauthserver\config\AuthorizationServerConfig.java
 C:\Workspace\BankApi\src\main\java\com\banking\security\springsecurityauthserver\model\AccountDetails.java
+C:\Workspace\BankApi\src\main\java\com\banking\security\springsecurityauthserver\model\RoutingNumberValidation.java
+C:\Workspace\BankApi\src\main\java\com\banking\security\springsecurityauthserver\model\AccountValidation.java
 C:\Workspace\BankApi\src\main\java\com\banking\security\springsecurityauthserver\model\Users.java
 C:\Workspace\BankApi\src\main\java\com\banking\security\springsecurityauthserver\service\CustomUserDetailsService.java
 C:\Workspace\BankApi\src\main\java\com\banking\security\springsecurityauthserver\model\CustomUserDetails.java
+C:\Workspace\BankApi\src\main\java\com\banking\security\springsecurityauthserver\repository\RoutingNumberValidationRepository.java
 C:\Workspace\BankApi\src\main\java\com\banking\security\springsecurityauthserver\SpringSecurityAuthServerApplication.java
 C:\Workspace\BankApi\src\main\java\com\banking\security\springsecurityauthserver\service\AccountService.java
 C:\Workspace\BankApi\src\main\java\com\banking\security\springsecurityauthserver\service\AccountServiceImpl.java
+C:\Workspace\BankApi\src\main\java\com\banking\security\springsecurityauthserver\repository\AccountValidationRepository.java
