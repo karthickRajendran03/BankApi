@@ -1,10 +1,11 @@
-insert into ACCOUNT_DETAILS(id, account_id,account_type, account_balance, name, pin) values (1,'0123', 'savings','10050', 'Karthick','1234');
+insert into ACCOUNT_DETAILS(id, account_id,account_type, account_balance, name, pin) values (1,'0688100720', 'savings','10050', 'Karthick','1234');
 insert into user (user_id, email, name, password, last_name, active) values(1,'karthick.sacs@gmail.com','Karthick','1234','Raj', 1);
 insert into role (role_id, role) values(1,'USER');
 insert into ACCOUNT_DETAILS(id, account_id,account_type, account_balance, name, pin) values (2,'7896', 'current','8900', 'Venkat','9999');
 insert into user (user_id, email, name, password, last_name, active) values(2,'varma@gmail.com','Varma','9999','Venkat', 1);
 insert into role (role_id, role) values(2,'USER');
-insert into VALID_ROUTING_NUMBER (id, ROUTING_NUMBER, VALID) values(1,'1234', 'valid');
-insert into VALID_ROUTING_NUMBER (id, ROUTING_NUMBER, VALID) values(2,'9999', 'invalid');
-insert into VALID_ACCOUNT_NUMBER (id, ACCOUNT_NUMBER, NAME, VALID) values(1,'1234', 'Karthick', 'valid');
-insert into VALID_ACCOUNT_NUMBER (id, ACCOUNT_NUMBER, NAME, VALID) values(2,'9999', 'Karthick', 'invalid');
+insert into VALID_ROUTING_NUMBER (id, ROUTING_NUMBER, VALID) values(1,'011105689', 'valid');
+insert into VALID_ROUTING_NUMBER (id, ROUTING_NUMBER, VALID) values(2,'111105689', 'invalid');
+insert into VALID_ACCOUNT_NUMBER (id, ACCOUNT_NUMBER, NAME, VALID) values(1,'0688100721', 'Karthick', 'valid');
+insert into VALID_ACCOUNT_NUMBER (id, ACCOUNT_NUMBER, NAME, VALID) values(2,'0688100722', 'Karthick', 'invalid');
+insert into CREDIT_CARD_DETAILS(id, ACCOUNT_ID,OUTSTANDING_AMOUNT, NAME, DUE_DATE, PAID_STATUS) values (1,'123123789', '7689','Karthick', '21-12-2020','Not Paid');

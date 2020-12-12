@@ -7,9 +7,11 @@ import org.springframework.stereotype.Service;
 
 import com.banking.security.springsecurityauthserver.model.AccountDetails;
 import com.banking.security.springsecurityauthserver.model.AccountValidation;
+import com.banking.security.springsecurityauthserver.model.CreditCardDetails;
 import com.banking.security.springsecurityauthserver.model.RoutingNumberValidation;
 import com.banking.security.springsecurityauthserver.repository.AccountRepository;
 import com.banking.security.springsecurityauthserver.repository.AccountValidationRepository;
+import com.banking.security.springsecurityauthserver.repository.CreditCardRepository;
 import com.banking.security.springsecurityauthserver.repository.RoutingNumberValidationRepository;
 
 /**
@@ -21,6 +23,9 @@ public class AccountServiceImpl implements AccountService{
 
  @Autowired
  private AccountRepository accountRepository;
+ 
+ @Autowired
+ private CreditCardRepository creditCardRepository;
 
  @Autowired
  private AccountValidationRepository accountValidationRepository;
@@ -36,11 +41,22 @@ public class AccountServiceImpl implements AccountService{
 public AccountDetails loadAccountByUsername(String name) {
 	 Optional<AccountDetails> accountOptional = accountRepository.findByName(name);	 
 	 if(null != accountOptional) {
-			System.out.println("Account Balance --->" + accountOptional.get().getBalance());
-		}
-	 System.out.println(accountOptional.toString());
+		 System.out.println("Customer Name --->" + accountOptional.get().getName());
+		 System.out.println("PIN --->" + accountOptional.get().getPin());		 
+		}	 
 
      return accountOptional.get();
+}
+
+@Override
+public CreditCardDetails loadCreditCardDetails(String name) {
+	 CreditCardDetails creditCardDetails = creditCardRepository.findByName(name);	 
+	 if(null != creditCardDetails) {
+		 System.out.println("Credit Card Account ID --->" + creditCardDetails.getAcctId());
+			System.out.println("Credit Card Balance --->" + creditCardDetails.getBalance());
+		}
+
+     return creditCardDetails;
 }
 
 @Override

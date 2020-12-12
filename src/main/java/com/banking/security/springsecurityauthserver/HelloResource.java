@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.banking.security.springsecurityauthserver.model.AccountDetails;
 import com.banking.security.springsecurityauthserver.model.AccountValidation;
+import com.banking.security.springsecurityauthserver.model.CreditCardDetails;
 import com.banking.security.springsecurityauthserver.model.RoutingNumberValidation;
 import com.banking.security.springsecurityauthserver.service.AccountService;
 import com.banking.security.springsecurityauthserver.service.CustomUserDetailsService;
@@ -47,6 +48,12 @@ public class HelloResource {
     public AccountDetails getBalance() {
      Authentication auth = SecurityContextHolder.getContext().getAuthentication();
      return accountService.loadAccountByUsername(auth.getName());
+    }
+    
+    @GetMapping(path = {"/getCreditCardDetails"})
+    public CreditCardDetails getCreditCardDetails() {
+     Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+     return accountService.loadCreditCardDetails(auth.getName());
     }
     
     @GetMapping(path = {"/abaValidation/{routingNumber}"})

@@ -2,6 +2,7 @@ com\banking\security\springsecurityauthserver\model\Role.class
 com\banking\security\springsecurityauthserver\model\RoutingNumberValidation.class
 com\banking\security\springsecurityauthserver\model\AccountDetails.class
 com\banking\security\springsecurityauthserver\repository\AccountRepository.class
+com\banking\security\springsecurityauthserver\model\CreditCardDetails.class
 com\banking\security\springsecurityauthserver\repository\UsersRepository.class
 com\banking\security\springsecurityauthserver\model\AccountValidation.class
 com\banking\security\springsecurityauthserver\service\CustomUserDetailsService.class
@@ -16,3 +17,4 @@ com\banking\security\springsecurityauthserver\service\AccountServiceImpl.class
 com\banking\security\springsecurityauthserver\config\SwaggerConfig.class
 com\banking\security\springsecurityauthserver\SpringSecurityAuthServerApplication.class
 com\banking\security\springsecurityauthserver\config\ResourceServerConfig.class
+com\banking\security\springsecurityauthserver\repository\CreditCardRepository.class
